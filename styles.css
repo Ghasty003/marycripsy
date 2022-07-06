@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Truculenta';
+}
+
+body {
+  background-image: url("images/cakegif2.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: snow;
+  position: relative;
+  z-index: -1;
+}
+
+.image img {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 200px;
+}
+
+.text {
+  width: 70%;
+}
+
+.text h2 {
+  font-size: 40px;
+  margin: initial auto;
+}
+
+.text span {
+  font-family: 'Sofia';
+}
+
+.text p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.home p {
+  background-color: coral;
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 10s;
+          transition-duration: 10s;
+}
+
+.home a {
+  text-decoration: none;
+  color: snow;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 10s;
+          transition-duration: 10s;
+}
+
+.home p:hover {
+  background-color: inherit;
+  border: 1px solid coral;
+}
+
+.home p:hover i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 935px) {
+  body {
+    height: 110vh;
+  }
+  .text p {
+    margin-right: 0;
+  }
+  .text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .text h2 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

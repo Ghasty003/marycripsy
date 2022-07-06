@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Truculenta';
+}
+
+// Body
+
+body{
+    
+    background: {
+        image: url('images/cakegif2.gif');
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+      }
+
+    height: 100vh;
+    color: snow;
+    position: relative;
+    z-index: -1;
+}
+
+.image{
+    img{
+        width: 100px;
+        margin: {
+            top: 20px;
+            left: 20px;
+        }
+        border-radius: 50%;
+    }
+}
+
+.container-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: {
+        top: 200px;
+    }
+}
+
+.text{
+    width: 70%;
+}
+
+.text{
+
+    h2{
+        font-size: 40px;
+        margin: initial auto;
+    }
+
+    span{
+        font-family: 'Sofia';
+    }
+
+    p{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 40px;
+    }
+}
+
+.home{
+    p{
+        background-color: coral;
+        width: 130px;
+        height: 40px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform;
+        transition-duration: 10s;
+    }
+
+    a{
+        text-decoration: none;
+        color: snow;
+        transition: transform;
+        transition-duration: 10s;
+    }
+    p:hover{
+        background-color: inherit;
+        border: 1px solid coral;
+    }
+    p:hover i{
+        transform: translateX(5px);
+    }
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+@media screen and (max-width:935px) {
+    body{
+        height: 110vh;
+    }
+
+    .text p{
+        margin-right: 0;
+    }
+
+    .text{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .text{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
